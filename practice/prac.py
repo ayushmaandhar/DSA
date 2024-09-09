@@ -1,20 +1,8 @@
-# variables
+# i want to use a recursive function to recursively calculate the factorial of a number
 
-print("Enter two values: ")
-a = int(input())
-b = int(input())
+def factorial(a: int) -> int:
+    if a == 1:
+        return 1
+    return a * factorial(a-1)
 
-print("Choose operation \n1)add \n2)minus \n3)multiply \n4)divide")
-option = int(input())
-
-if option == 1:
-    print(a+b)
-
-elif option == 2:
-    print(a-b)
-
-elif option == 3:
-    print(a*b)
-
-elif option == 4:
-    print(a // b)
+print(factorial(5))
